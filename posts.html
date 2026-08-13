@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/3) · sf-t3-1779642675702-130</title>
+  <meta name="description" content="sf-t3-1779642675702-130에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-130.maphoshirts.com/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+ background-color: #faf9f7;
+ color: #2c2c2c;
+ line-height: 1.7;
+ font-weight: 400;
+ }
+ h1, h2, h3, h4 {
+ font-weight: 600;
+ letter-spacing: -0.02em;
+ color: #1a1a1a;
+ }
+ h1 {
+ font-size: 2.8rem;
+ line-height: 1.2;
+ margin-bottom: 1rem;
+ }
+ h2 {
+ font-size: 2rem;
+ line-height: 1.3;
+ margin-bottom: 1.5rem;
+ border-bottom: 2px solid #d4c9b8;
+ padding-bottom: 0.5rem;
+ }
+ h3 {
+ font-size: 1.4rem;
+ line-height: 1.4;
+ margin-bottom: 1rem;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ font-size: 1.05rem;
+ }
+ a {
+ color: #8b7355;
+ text-decoration: none;
+ transition: color 0.2s ease;
+ }
+ a:hover {
+ color: #5a4a3a;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+ header {
+ background: #ffffff;
+ border-bottom: 1px solid #e8e3dc;
+ padding: 1rem 0;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+ .logo {
+ font-size: 1.6rem;
+ font-weight: 700;
+ color: #1a1a1a;
+ text-decoration: none;
+ letter-spacing: -0.03em;
+ }
+ .logo:hover {
+ color: #8b7355;
+ }
+ nav {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ nav a {
+ font-size: 0.95rem;
+ font-weight: 500;
+ color: #4a4a4a;
+ text-decoration: none;
+ transition: color 0.2s ease;
+ }
+ nav a:hover {
+ color: #8b7355;
+ }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ padding: 5px;
+ }
+ .hamburger-menu span {
+ width: 25px;
+ height: 2px;
+ background: #2c2c2c;
+ transition: all 0.3s ease;
+ }
+ .tel-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.4rem;
+ font-weight: 600;
+ color: #8b7355;
+ border: 1px solid #8b7355;
+ padding: 0.4rem 1rem;
+ border-radius: 4px;
+ transition: all 0.2s ease;
+ }
+ .tel-link:hover {
+ background: #8b7355;
+ color: #ffffff;
+ }
+ @media (max-width: 768px) {
+ .hamburger-menu {
+ display: flex;
+ }
+ nav {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: #ffffff;
+ padding: 1.5rem 2rem;
+ border-bottom: 1px solid #e8e3dc;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ }
+ nav.active {
+ display: flex;
+ }
+ nav a {
+ padding: 0.5rem 0;
+ }
+ h1 {
+ font-size: 2rem;
+ }
+ h2 {
+ font-size: 1.6rem;
+ }
+ .container {
+ padding: 0 1.2rem;
+ }
+ }
+ .hero-section {
+ padding: 4rem 0 3rem;
+ background: linear-gradient(135deg, #f5f0eb 0%, #e8e3dc 100%);
+ }
+ .hero-section h1 {
+ max-width: 800px;
+ }
+ .hero-section p {
+ font-size: 1.15rem;
+ color: #4a4a4a;
+ max-width: 720px;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 2.5rem;
+ padding: 3rem 0;
+ }
+ @media (max-width: 768px) {
+ .info-grid {
+ grid-template-columns: 1fr;
+ gap: 2rem;
+ }
+ }
+ .info-card {
+ background: #ffffff;
+ border: 1px solid #e8e3dc;
+ border-radius: 8px;
+ padding: 2rem;
+ transition: box-shadow 0.3s ease;
+ }
+ .info-card:hover {
+ box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+ }
+ .info-card h3 {
+ display: flex;
+ align-items: center;
+ gap: 0.6rem;
+ margin-bottom: 1.2rem;
+ }
+ .info-card ul {
+ list-style: none;
+ padding: 0;
+ }
+ .info-card ul li {
+ padding: 0.6rem 0;
+ border-bottom: 1px solid #f0ece6;
+ font-size: 1rem;
+ color: #3a3a3a;
+ }
+ .info-card ul li:last-child {
+ border-bottom: none;
+ }
+ .stat-highlight {
+ font-weight: 600;
+ color: #8b7355;
+ }
+ .faq-section {
+ padding: 3rem 0 4rem;
+ }
+ .faq-item {
+ background: #ffffff;
+ border: 1px solid #e8e3dc;
+ border-radius: 6px;
+ padding: 1.5rem 2rem;
+ margin-bottom: 1rem;
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ margin-bottom: 0.5rem;
+ color: #1a1a1a;
+ }
+ .faq-item p {
+ font-size: 0.95rem;
+ color: #4a4a4a;
+ margin-bottom: 0;
+ }
+ .cta-section {
+ background: #2c2c2c;
+ color: #faf9f7;
+ padding: 3rem 0;
+ text-align: center;
+ }
+ .cta-section h2 {
+ color: #faf9f7;
+ border-bottom-color: #4a4a4a;
+ }
+ .cta-section p {
+ font-size: 1.1rem;
+ margin-bottom: 1.5rem;
+ }
+ .cta-button {
+ display: inline-block;
+ background: #8b7355;
+ color: #ffffff;
+ padding: 0.8rem 2.5rem;
+ border-radius: 4px;
+ font-weight: 600;
+ font-size: 1.1rem;
+ transition: background 0.2s ease;
+ }
+ .cta-button:hover {
+ background: #6b5a40;
+ color: #ffffff;
+ }
+ footer {
+ background: #1a1a1a;
+ color: #a0a0a0;
+ padding: 2rem 0;
+ text-align: center;
+ font-size: 0.9rem;
+ }
+ footer a {
+ color: #c0b8a8;
+ }
+ footer a:hover {
+ color: #ffffff;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/3) · sf-t3-1779642675702-130">
+  <meta property="og:description" content="sf-t3-1779642675702-130에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-130.maphoshirts.com/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <a href="/" class="logo">마포 셔츠룸</a>
+ <div class="hamburger-menu" onclick="document.querySelector('nav').classList.toggle('active')">
+ 
+ 
+ 
+ </div>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/services">서비스</a>
+ <a href="/location">위치</a>
+ <a href="/contact">문의</a>
+ 
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 42개 · 1/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-001-1ng3wr5.html">마포 셔츠룸, 예약 전에 챙겨야 할 체크리스트</a>
+        <p class="post-item__summary">마포 지역에서 셔츠룸을 처음 알아보는 사람들은 무엇부터 확인해야 할지 막막해하는 경우가 많다. 이 글에서는 예약 전 점검할 항목, 비용이 정해지는 구조, 지역 특징을 체크리스트 형태로 정리해 방문 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-002-lw0asp.html">마포 셔츠룸 선택 시 가성비 분석 기준</a>
+        <p class="post-item__summary">잘 몰라서 그런데 보통 마포에서 셔츠룸 고를 때 다들 뭘 기준으로 잡는지 궁금하다. 그냥 추천받아서 가나. 나는 효율을 따지니까 무조건 시간 대비 만족도를 계산하게 된다. 무작정 비싸다고 좋은 것도</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-1j7a4x1.html">단골 손님의 시선으로 본 마포 셔츠룸 원가와 마진 구조의 비밀</a>
+        <p class="post-item__summary">####</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-oefc3q.html">마포 셔츠룸 현장에서 놓치기 쉬운 포인트를 기록해봤다</a>
+        <p class="post-item__summary">마포 지역에서 비즈니스 미팅이나 친목 도모를 위해 마포 셔츠룸을 고려하는 이들이 많아지고 있습니다. 주식 투자자들은 시장의 흐름을 읽고 정보를 교환하는 과정에서 자연스럽게 사적인 대화 공간을 찾게 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1385.html">마포 셔츠룸에서 주식 이야기가 나올 때</a>
+        <p class="post-item__summary">셔츠룸 가면 술자리가 주식 얘기 아니냐는 말을 수도 없이 들었다. 현실이 그렇다. 마포 일대에서 셔츠룸 손님들 상당수가 증시에 관심이 있고, 실제로 그 자리에서 종목 얘기가 오간다. 분위기가 그쪽으</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0693.html">마포 지역 비즈니스를 위한 온라인 마케팅 기초 가이드</a>
+        <p class="post-item__summary">마포는 서울에서 가장 활기찬 비즈니스 지역 중 하나로, 소상공인부터 중소기업까지 다양한 규모의 사업체들이 운영되고 있습니다. 디지털 시대로의 전환에 따라 이 지역의 많은 사업주들은 온라인 플랫폼에서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0694.html">마포의 비즈니스 생태계, 변화하는 지역경제의 중심지</a>
+        <p class="post-item__summary">마포는 서울의 주요 비즈니스 허브로서 오래전부터 상업과 문화의 교차점 역할을 해왔습니다. 강변북로와 경의로를 따라 펼쳐지는 상점들과 사무실들은 이 지역이 얼마나 활발한 경제 활동의 중심인지를 보여줍</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0695.html">마포 지역의 문화생활과 여가 활동 안내</a>
+        <p class="post-item__summary">서울 마포 지역은 오랫동안 젊은 세대와 직장인들이 선호하는 생활 공간으로 자리 잡아왔습니다. 홍대, 연남동, 망원동 일대의 카페 거리부터 대학로의 공연장까지 다양한 문화 시설이 밀집해 있으며, 한강</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0696.html">마포 셔츠룸에서 배우는 주식투자</a>
+        <p class="post-item__summary">마포 셔츠룸은 마포구에 위치한 소규모 주식투자 전문 업체입니다. 이곳은 트레이딩 교육부터 실무 실전까지 완성도 높은 프로그램을 제공하며, 초보 투자자부터 중급자까지 모두에게 맞춤형 서비스를 지원합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0697.html">마포 셔츠룸, 선택의 기준을 투자 원칙에서 찾다</a>
+        <p class="post-item__summary">마포에는 다양한 콘셉트의 셔츠룸이 밀집해 있어 선택 폭이 넓다. 하지만 업소마다 서비스 구성과 비용 체계가 달라 사전 지식 없이 결정을 내리면 기대와 다른 결과를 얻을 수 있다. 이는 투자 시장에서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0698.html">마포 셔츠룸에서 주식투자 전략 세미나</a>
+        <p class="post-item__summary">마포의 실내 사무실, 셔츠룸에서 주식투자에 필요한 자료를 한눈에 볼 수 있는 환경이 조성되어 있다. 벽에 걸린 대형 차트와 최신 경제지표가 바로 눈에 들어오며, 집중력 저하 없이 회의가 가능하다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0699.html">마포 셔츠룸을 찾는 주식투자자들이 주목하는 흐름</a>
+        <p class="post-item__summary">최근 마포 일대에서 마포 셔츠룸을 찾는 주식투자자들이 부쩍 늘어나는 추세다. 단순한 접객 공간이라는 기존 인식과 달리 이곳에서는 다양한 업종 관계자들이 모여 시장 정보를 교류하는 모습이 자주 목격된</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0700.html">마포 지역 비즈니스 가이드: 서울의 활력 있는 중심지를 탐색하다</a>
+        <p class="post-item__summary">마포는 서울 강서권에서 가장 역동적인 상업 및 문화 지역 중 하나로 알려져 있습니다. 상암동의 최첨단 미디어시티부터 홍대입구의 트렌디한 카페 거리까지, 이 지역은 다양한 업종의 사업체들이 밀집해 있</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0701.html">마포의 활기찬 문화와 비즈니스 생태계 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치한 역동적인 지역으로, 전통과 현대가 조화를 이루는 특별한 매력을 지니고 있습니다. 합정동의 감성 카페거리부터 상암동의 디지털 허브까지, 다양한 비즈니스와 문화시설이 밀집</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0702.html">마포 셔츠룸, 주식투자의 새로운 선택지</a>
+        <p class="post-item__summary">마포 셔츠룸은 주식투자 서비스가 제공되는 플랫폼입니다. 다양한 자산 운용 도구와 실시간 분석 정보를 한 곳에서 확인할 수 있어 초보자부터 고급 투자자까지 친근하게 활용할 수 있습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0703.html">마포와 홍대 지역의 선택 기준: 지역 문화와 오락 시설 안내</a>
+        <p class="post-item__summary">마포 지역은 서울에서 가장 역동적인 문화 중심지 중 하나로 자리잡고 있습니다. 한강공원의 자연 경관과 홍대 앞의 예술 감성이 어우러져 있으며, 카페, 갤러리, 라이브 공연장 등 다양한 시설이 밀집되</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0704.html">마포 셔츠룸 투자자들이 주목하는 신뢰의 가치</a>
+        <p class="post-item__summary">최근 마포 지역 셔츠룸 업계에 새로운 바람이 불고 있다. 단순한 매출보다 장기적인 가치에 집중하는 투자자들이 늘어난 덕분이다. 이들은 마치 주식투자자처럼 신중하게 시장을 분석하고 차별화 전략을 세운</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0705.html">마포 지역 비즈니스 생태계와 디지털 전환의 현주소</a>
+        <p class="post-item__summary">마포는 서울 중심부의 중요한 상권으로, 홍대입구와 애오개 일대를 중심으로 소상공인과 스타트업이 밀집해 있다. 이곳은 전통 소매업과 신생 기업이 공존하는 독특한 생태계를 형성하고 있으며, 최근 몇 년</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0706.html">마포 셔츠룸에서 찾은 투자 이야기</a>
+        <p class="post-item__summary">마포에 위치한 작은 커피샵, 마포 셔츠룸은 언제나 신선한 재료와 힙한 분위기로 지역 주민들의 발길을 끕니다. 이곳에서는 단순히 커피만 마시는 것이 아니라, 파트너와 기회를 논의하기 좋은 공간이 되죠</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0298.html">마포 셔츠룸 이용 시 고려해야 할 마포 단체 회식용 대형 룸 노래방 가격 정보 및 비즈니스 매칭</a>
+        <p class="post-item__summary">많은 이들이 마포 셔츠룸을 방문할 때 무조건 비싸고 부담스러운 공간이라는 고정관념을 가지고 있습니다. 하지만 실제 대형 룸을 활용한 단체 회식은 인원 대비 효율을 따져보면 합리적인 선택이 될 수 있</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
